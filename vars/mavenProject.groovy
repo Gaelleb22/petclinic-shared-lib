@@ -1,11 +1,14 @@
-pipeline {
-    agent any
+def call() {
+    pipeline {
+        agent any
     
-    stages {
-        stage('Hello') {
-            steps {
-                quiEsTu 'twitter'
+        stages {
+            stage('Hello') {
+                steps {
+                    quiEsTu 'twitter'
+                }
             }
         }
     }
 }
+
